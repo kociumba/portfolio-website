@@ -12,11 +12,4 @@ const observer = new IntersectionObserver((entries) => {
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el)); // observe each element
 
-function onClick() {
-    console.log("clicked");
-    if (entry) {
-        entry.target.classList.add('clicked');
-    } else {
-        entry.target.classList.remove('clicked');
-    }
-}
+object.onclick = function(){this.onclick} 
