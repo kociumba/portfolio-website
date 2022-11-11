@@ -11,3 +11,11 @@ const observer = new IntersectionObserver((entries) => {
 
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el)); // observe each element
+
+object.onclick = function(){this.onclick} 
+
+window.onclick = myFunction;
+
+  function myFunction() {
+document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+}
