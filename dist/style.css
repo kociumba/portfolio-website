@@ -1,0 +1,101 @@
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800");
+
+body {
+    font-family: 'Poppins', sans-serif; /* Change your font family */
+    font-size: 50px; 
+    background-color: #131316;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.curve {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 148px;
+}
+
+.curve .shape-fill {
+    fill: #b30c5a9a;
+}
+
+section {
+    display: grid;
+    position: relative;
+    place-items: center;
+    align-content: top;
+    min-height: 110vh;
+    padding: 10vw;
+}
+
+p {
+    position: relative;
+    top: -20vh;
+    z-index: 1; 
+    overflow: hidden;
+}
+
+.text-gradient {
+    font-size: 70px;
+    background: -webkit-linear-gradient(135deg, #791bb8 0%, /*#d5b4cf 50%,*/ #d1882a 100%); /* set the gradient color */
+    background-size: 150% 200%; /* set the gradient size */
+    text-transform: capitalize; /* set the text to uppercase */
+    color: #131316; 
+    -webkit-background-clip: text; /* set the text to clip through the gradient */
+    background-clip: text; 
+    stroke:#ffffff;
+    -webkit-text-stroke: 5px transparent;
+    /*-webkit-text-fill-color: transparent;*/
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s ;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;
+    -ms-transition: all 1s ;
+    -o-transition: all 1s ;
+    -webkit-filter: blur(5px);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+
+.visible {
+    opacity: 1;
+    filter: blur(0px);
+    transform: translateX(0%);
+    }
+
+.logos {
+    display: flex;
+    position: relative;
+    top: -20vh;
+    z-index: 1;
+}
+
+.logo:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+    transition-delay: 600ms;
+}
