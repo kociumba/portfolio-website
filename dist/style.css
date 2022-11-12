@@ -50,7 +50,7 @@ p {
     font-size: 70px;
     background: -webkit-linear-gradient(135deg, #791bb8 0%, /*#d5b4cf 50%,*/ #d1882a 100%); /* set the gradient color */
     background-size: 150% 200%; /* set the gradient size */
-    text-transform: capitalize; /* set the text to uppercase */
+   /* text-transform: capitalize; *//* set the text to uppercase */
     color: #131316; 
     -webkit-background-clip: text; /* set the text to clip through the gradient */
     background-clip: text; 
