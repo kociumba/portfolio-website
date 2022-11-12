@@ -41,3 +41,30 @@ function youtube() {
     window.location.href = "https://www.youtube.com/@kociumba";
   }
 
+document.getElementById("github").addEventListener("click", github);
+
+function github() {
+  document.getElementById("clickable");
+  window.location.href = "https://www.github.com/kociumba";
+}
+
+document.getElementById("discord").addEventListener("click", discord);
+
+function discord() {
+  document.getElementById("clickable");
+  window.location.href = "https://discord.gg/h2t8TxYffk";
+}
+
+document.getElementById("twitter").addEventListener("click", twitter);
+
+function twitter() {
+  document.getElementById("clickable");
+  window.location.href = "https://www.twitter.com/kociumba";
+}
+
+document.getElementById("email").addEventListener("click", email);
+
+function email() {
+  document.getElementById("clickable");
+  window.location.href = "mailto: kociumbaofficial@gmail.com?subject=Business Inquiry&body = Message";
+}
