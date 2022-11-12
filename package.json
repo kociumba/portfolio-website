@@ -19,6 +19,7 @@
   "homepage": "https://github.com/kociumba/scroll-animation#readme",
   "dependencies": {
     "firebase": "^9.14.0",
+    "firebase-tools": "^11.16.0",
     "lodash": "^4.17.21"
   }
 }
