@@ -68,3 +68,4 @@ function email() {
   document.getElementById("clickable");
   window.location.href = "mailto: kociumbaofficial@gmail.com?subject=Business Inquiry&body = Message";
 }
+

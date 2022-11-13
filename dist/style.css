@@ -11,6 +11,50 @@ body {
     top: -20vh;
 }
 
+.pulse:hover,
+.pulse:focus {
+        -webkit-animation: pulse 0.7s;
+        animation: pulse 0.7s;
+        box-shadow: 0 0 0 1em transparent;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 var(--hover);
+    }
+  }
+
+.pulse {
+  --color: #e67d41;
+  --hover: #ef8f6e;
+}
+
+button {
+  color: var(--color);
+  transition: 0.25s;
+}
+button:hover, button:focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+    background: none;
+    border: 2px solid;
+    font: inherit;
+    text-transform: capitalize;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em 1em; 
+    overflow-x: hidden;
+}
+
 .curve {
     position: absolute;
     top: 20vh;
@@ -44,6 +88,10 @@ p {
     position: relative;
     z-index: 1; 
     overflow: hidden;
+}
+
+.capital {
+    text-transform: capitalize;
 }
 
 .text-gradient {
@@ -89,7 +137,7 @@ p {
 .logos {
     display: flex;
     justify-content: space-around;
-    gap: 5vw;
+    gap: 8px;
     position: relative; 
     top: -20vh;
     z-index: 1;
