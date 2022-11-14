@@ -55,11 +55,11 @@ function discord() {
   window.location.href = "https://discord.gg/h2t8TxYffk";
 }
 
-document.getElementById("twitter").addEventListener("click", twitter);
+document.getElementById("spotify").addEventListener("click", spotify);
 
-function twitter() {
+function spotify() {
   document.getElementById("clickable");
-  window.location.href = "https://www.twitter.com/kociumba";
+  window.location.href = "https://open.spotify.com/artist/1ScF8LjgGaH54EkCiwCqNU?si=bMqr6dLkS0inuMfQekBl5g";
 }
 
 document.getElementById("email").addEventListener("click", email);
